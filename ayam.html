@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Outer container dengan lebar penuh */
+        .outer-container {
+          position: relative;
+          width: 100vw; /* Lebar penuh viewport */
+          height: 100vh; /* Sesuaikan dengan kebutuhan */
+        }
+
+        /* Container Bootstrap */
+        .container {
+          position: relative;
+          height: 100%; /* Agar container menyesuaikan tinggi outer container */
+        }
+
+        /* Left content yang mengambil 50% dari container Bootstrap */
+        .left-content {
+          width: 50%; /* Mengambil 50% dari lebar Bootstrap container */
+          background-color: lightblue; /* Style sesuai kebutuhan */
+          height: 100%; /* Sesuaikan tinggi */
+          float: left; /* Agar left-content berada di sebelah kiri */
+        }
+
+        /* Right content yang mengambil sisa ruang hingga tepi viewport */
+        .right-content {
+          position: absolute;
+          left: 50%; /* Dimulai dari 50% container */
+          right: 0; /* Hingga tepi kanan viewport */
+          background-color: lightcoral; /* Style sesuai kebutuhan */
+          height: 100%; /* Sesuaikan tinggi */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+          <div class="left-content">Konten Kiri</div>
+          <div class="right-content">Konten Kanan</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

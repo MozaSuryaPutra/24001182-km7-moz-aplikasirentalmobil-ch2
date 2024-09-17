@@ -1,0 +1,167 @@
+.body{
+    font-family: Helvetica;
+}
+
+.landing-page{
+  background-color : #F1F3FF;
+  
+}
+
+.combine{
+  display: flex;
+  flex-wrap : wrap;
+}
+
+.left-side {
+  background-color : #F1F3FF;
+  display: flex;
+  flex-basis: 50%;
+}
+
+.content{
+
+  padding-right: 150px;
+}
+.right-side {
+  position: relative;
+  
+  background-color : #F1F3FF;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: end;
+
+}
+
+
+
+.right-side img{
+  width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .left-side, .right-side {
+    flex-basis: 100%; 
+    padding-top: 20px;
+   
+  }
+
+  .left-side .content {
+    max-width: 100%; 
+  }
+  
+  .right-side{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+    
+}
+
+  .right-side img {
+    max-width: 100%; 
+    
+  }
+
+  .why-us{
+    flex-direction: column; 
+    height: auto; 
+  }
+  .card{
+    width: 100%!important;
+  }
+  
+
+  .col-md-10{
+    width: 100%;
+  }
+
+
+  
+}
+
+
+
+.navbar-custom{
+    font-weight: 500;
+    background-color : #F1F3FF;
+    padding-top: 24px !important;
+}
+
+.accordion-item {
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+    overflow: hidden; 
+  }
+  
+  .accordion-button {
+    border: 1px solid #D4D4D4;
+    border-radius: 10px ; 
+    background-color: #fff; 
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .accordion-button.collapsed {
+    border: 1px solid #D4D4D4;
+    border-bottom: 1px solid #D4D4D4; 
+    border-radius: 10px ; 
+  }
+
+ 
+  .custom-bg{
+    background-color: #0D28A6;
+  }
+
+  .btn-custom{
+    background-color: #5CB85F;
+    border-color: #5CB85F;
+    color:#fff;
+    border-radius : 3px;
+  }
+
+  .btn-customm{
+    background-color: #0D28A6;
+    border-color: #0D28A6;
+    color: #0D28A6;
+    border-radius : 3px;
+    bottom: 0;
+  }
+
+  .testimoni{
+    width: 100%;
+  }
+
+  .profile-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #333; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-item{
+    background-color: #F1F3FF;
+    height: 30vh;
+  }
+
+  .best-car-rental{
+    height: auto !important;
+  }
+
+  
