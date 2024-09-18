@@ -77,8 +77,13 @@
     width: 100%!important;
   }
   
-
+  .isi{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
  
+  }
+
 
   
 }
@@ -154,16 +159,18 @@
 
   .carousel-item{
     background-color: #F1F3FF;
-    height: 50vh;
+    min-height: 50vh;
+
   }
 
+  
   .best-car-rental{
     height: auto !important;
   }
 
   .carousel-control-prev i, .carousel-control-next i {
     font-size: 50px;
-    color: #000; /* Sesuaikan dengan warna yang diinginkan */
+    color: #000; 
   }
 
   
