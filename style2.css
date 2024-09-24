@@ -17,9 +17,6 @@
   flex-basis: 50%;
 }
 
-.content {
-  padding-right: 150px;
-}
 .right-side {
   position: relative;
 
@@ -86,26 +83,6 @@
   padding-top: 24px !important;
 }
 
-.accordion-item {
-  border: 1px solid #d4d4d4;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.accordion-button {
-  border: 1px solid #d4d4d4;
-  border-radius: 10px;
-  background-color: #fff;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.accordion-button.collapsed {
-  border: 1px solid #d4d4d4;
-  border-bottom: 1px solid #d4d4d4;
-  border-radius: 10px;
-}
-
 .custom-bg {
   background-color: #0d28a6;
 }
@@ -125,38 +102,16 @@
   bottom: 0;
 }
 
-.testimoni {
-  width: 100%;
-}
-
-.profile-circle {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #333;
+.formSearch {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
-.profile-circle img {
+.card {
+  position: absolute;
+  top: -35px;
+}
+
+.form-label {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel-item {
-  background-color: #f1f3ff;
-  min-height: 50vh;
-}
-
-.best-car-rental {
-  height: auto !important;
-}
-
-.carousel-control-prev i,
-.carousel-control-next i {
-  font-size: 50px;
-  color: #000;
 }
