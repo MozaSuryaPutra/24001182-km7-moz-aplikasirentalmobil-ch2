@@ -68,7 +68,7 @@ document.getElementById("submit").addEventListener("click", async (event) => {
   RealData.forEach((car) => {
     const carcontent = `
         <div class="col-md-4 h-100 pb-2 pt-2">
-          <div class="card h-100" style="width: 18rem">
+          <div class="card h-100 w-100" style="width: 18rem">
             <div class="card-body">
               <h5 class="card-title">${car.model}</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">
