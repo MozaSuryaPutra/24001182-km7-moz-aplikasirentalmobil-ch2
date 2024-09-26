@@ -32,7 +32,7 @@ async function updateData(driver, date, passenger) {
   const filteredData = dataout.filter((car) => {
     return (
       car.available === driverValue &&
-      car.availableAt >= date &&
+      car.availableAt < date &&
       car.capacity >= passenger
     );
   });
@@ -40,6 +40,7 @@ async function updateData(driver, date, passenger) {
 }
 
 const carContentElement = document.getElementById("car-content");
+console.log(carContentElement);
 
 document.getElementById("submit").addEventListener("click", async (event) => {
   event.preventDefault();
@@ -65,9 +66,7 @@ document.getElementById("submit").addEventListener("click", async (event) => {
 
   let filteredCarsHTML = "";
   RealData.forEach((car) => {
-    const carAvailableAt = new Date(car.availableAt);
-    if (carAvailableAt > dateInput && car.capacity > passengerInput) {
-      const carcontent = `
+    const carcontent = `
         <div class="col-md-4 h-100 pb-2 pt-2">
           <div class="card h-100" style="width: 18rem">
             <div class="card-body">
@@ -91,9 +90,9 @@ document.getElementById("submit").addEventListener("click", async (event) => {
           </div>
         </div>
       `;
-      filteredCarsHTML += carcontent;
-    }
+    filteredCarsHTML += carcontent;
   });
+
   carContentElement.innerHTML = filteredCarsHTML;
 });
 // async function handleSubmit(event) {
