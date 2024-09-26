@@ -70,24 +70,32 @@
   </section>
 <div class="formSearch">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-items-center">
       <div class="col-md-10">
         <div class="card shadow">
           <div class="card-body">
             <form>
-              <div class="row" >
-                
-                <div class="col-md-4 ">
+              <div class="row align-items-center" >
+
+                <div class="col-md-3 ">
+                 <label for="Driver" class="pb-2">Tipe Driver</label>
+                <select id="driverInput" name="choose" class="form-control">
+                <option value="" selected>Pilih Tipe Driver</option>
+                <option value="denganSopir">Dengan Sopir</option>
+                <option value="tanpaSopir">Tanpa Sopir(Lepas Kunci)</option>
+              </select>
+                </div>
+                <div class="col-md-3 ">
                 <label for="tanggal" class="form-label">Tanggal</label>
                 <!--Pencet Sekali Dulu baru bisa-->
                 <input type="date" class="form-control" id="dateInput" onfocus="(this.type='date')" placeholder="Pilih Tanggal" onblur="if(this.value==''){this.type='text'} required">
               </div>
 
-                <div class="col-md-5">
+                <div class="col-md-4">
                   <label for="jumlahPenumpang" class="form-label">Jumlah Penumpang(Optional)</label>
                   <input type="number" min="0" id = "passengerInput"class="form-control" placeholder="Jumlah Penumpang" style="background-image: url('images/fi_users.png'); background-repeat: no-repeat; background-position: calc(100% - 10px) center; padding-right: 40px;">
                 </div>
-                <div class="col-md-3  pt-2 d-flex align-items-end  ">
+                <div class="col-md-2  pt-4 d-flex align-items-end  ">
                   <button type="submit" class="btn-custom w-100" id="submit">Cari Mobil</button>
                 </div>
               </div>
@@ -98,6 +106,15 @@
     </div>
   </div>
 </div>
+
+<div class="container " style="height: 50vh;  ">
+      <div class="row  h-100"  > 
+        <div class="col-md-1"></div>
+<div class="col-md-10 h-100" id="car-content" ></div>
+      </div>div class="col-md-1"></div>
+     
+    </div>
+   
 
     
 
