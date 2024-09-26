@@ -160,3 +160,17 @@
   font-size: 50px;
   color: #000;
 }
+
+.formSearch {
+  display: none;
+  position: relative;
+}
+
+.formSeach .card {
+  position: absolute;
+  top: -45px;
+}
+
+.form-label {
+  width: 100%;
+}

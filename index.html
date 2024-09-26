@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -39,7 +39,7 @@
             </li>
             <li class="nav-item mx-3">
               <a class="navbar-brand" href="#register">
-                <button type="button" class="btn-custom">Register</button>
+                <button type="button" class="btn-custom" >Register</button>
               </a>
             </li>
           </ul>
@@ -57,7 +57,7 @@
       <div class="content ">
         <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
         <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga bersaing. Sewa sekarang untuk kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-        <button type="button" class="btn-custom mb-3" >Mulai Sewa Mobil</button>
+       <a href="carimobil.html"> <button type="button" class="btn-custom mb-3" id="btn-custom" >Mulai Sewa Mobil</button></a>
       </div>
     </div>
     <div class="right-side">
@@ -69,8 +69,8 @@
 </div>
   </section>
 
-  <div class="container pt-5 pb-5">
-    <section class="best-car-rental" id="our-service">
+  <div class="container pt-5 pb-5" id = "searchForCar">
+    <section class="best-car-rental pt-5 pb-5" id="our-service">
   <div class="row" style="gap: 25px;">
     <div class="col-md-1">
         </div>
@@ -110,10 +110,10 @@
     </div>
   </div>
     </section>
-  </div>
+
   
-  <div class="container pt-5 pb-5">
-    <section class="why-us " id="why-us">
+
+    <section class="why-us pb-5 pt-5 " id="why-us">
       <div class="text-why">
       <h2 style="font-weight: 700;">Why Us ?</h2>
       <p>Mengapa harus pilih Binar Car Rental?</p>
@@ -158,10 +158,10 @@
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="container pb-5 pt-5">
-    <section class="testimoni" id="testimoni">
+
+  
+    <section class="testimoni pt-5 pb-5" id="testimoni">
       <div class="text-testimoni text-center">
         <h1>Testimonial</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
@@ -225,18 +225,18 @@
         <div class="col-md-2"></div>
       </div>
     </section>
-  </div>
+ 
   
   
 
 
-    <div class="container pt-5  ">
-      <section class="text-center custom-bg p-2 rounded w-100 d-flex align-items-center justify-content-center " style="min-height: 60vh;" id="register">
+   
+      <section class="text-center custom-bg p-2 rounded w-100 d-flex align-items-center justify-content-center pt-5 pb-5" style="min-height: 60vh;" id="register">
         <div class="for-text m-5">
             <p class="display-5 text-white">Sewa Mobil Di Lampung Sekarang</p>
             <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incidunt ut labore et dolore magna aliqua.</p> 
             <br>
-            <button type="button" class="btn-custom">Mulai Sewa Mobil</button>
+           <a href="carimobil.html"><button type="button" class="btn-custom" id="btn-custom ">Mulai Sewa Mobil</button></a> 
         </div>
     </section>
     
@@ -312,6 +312,8 @@
         </div>
     </div>
   </section>
+   </div>
+   <div class="container">
     <footer class="footer-responsive pt-5 pb-5">
      
             <div class="row">
@@ -342,6 +344,39 @@
               </div>
             
     </footer>
+</div>
+
+<!-- <div class="formSearch" id="formSearch">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="card shadow">
+          <div class="card-body">
+            <form>
+              <div class="row" >
+                
+                <div class="col-md-4 ">
+                <label for="tanggal" class="form-label">Tanggal</label>
+                
+                <input type="date" class="form-control" id="tanggal" onfocus="(this.type='date')" placeholder="Pilih Tanggal" onblur="if(this.value==''){this.type='text'}">
+              </div>
+
+                <div class="col-md-4">
+                  <label for="jumlahPenumpang" class="form-label">Jumlah Penumpang(Optional)</label>
+                  <input type="number" min="0" class="form-control" id="jumlahPenumpang" placeholder="Jumlah Penumpang" style="background-image: url('images/fi_users.png'); background-repeat: no-repeat; background-position: calc(100% - 10px) center; padding-right: 40px;">
+                </div>
+                <div class="col-md-4  pt-2 d-flex align-items-end  ">
+                  <button type="submit" class="btn-custom w-100">Cari Mobil</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

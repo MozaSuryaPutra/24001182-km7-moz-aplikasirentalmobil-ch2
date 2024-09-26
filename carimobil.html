@@ -77,18 +77,18 @@
             <form>
               <div class="row" >
                 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 ">
                 <label for="tanggal" class="form-label">Tanggal</label>
                 <!--Pencet Sekali Dulu baru bisa-->
-                <input type="date" class="form-control" id="tanggal" onfocus="(this.type='date')" placeholder="Pilih Tanggal" onblur="if(this.value==''){this.type='text'}">
+                <input type="date" class="form-control" id="dateInput" onfocus="(this.type='date')" placeholder="Pilih Tanggal" onblur="if(this.value==''){this.type='text'} required">
               </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-5">
                   <label for="jumlahPenumpang" class="form-label">Jumlah Penumpang(Optional)</label>
-                  <input type="number" min="0" class="form-control" id="jumlahPenumpang" placeholder="Jumlah Penumpang" style="background-image: url('images/fi_users.png'); background-repeat: no-repeat; background-position: calc(100% - 10px) center; padding-right: 40px;">
+                  <input type="number" min="0" id = "passengerInput"class="form-control" placeholder="Jumlah Penumpang" style="background-image: url('images/fi_users.png'); background-repeat: no-repeat; background-position: calc(100% - 10px) center; padding-right: 40px;">
                 </div>
-                <div class="col-md-4 col-sm-6 pt-2 d-flex align-items-end  ">
-                  <button type="submit" class="btn-custom w-100">Cari Mobil</button>
+                <div class="col-md-3  pt-2 d-flex align-items-end  ">
+                  <button type="submit" class="btn-custom w-100" id="submit">Cari Mobil</button>
                 </div>
               </div>
             </form>
