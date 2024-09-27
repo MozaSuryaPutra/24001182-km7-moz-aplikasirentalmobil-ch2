@@ -74,6 +74,9 @@ const handleCarSubmit = async (event) => {
   console.log(RealData);
 
   let filteredCarsHTML = "";
+  if (RealData.length === 0) {
+    filteredCarsHTML = "<p>Pencarianmu Tidak Ditemukan</p>";
+  }
   RealData.forEach((car) => {
     const carContent = `
       <div class="col-md-4 h-100 pb-2 pt-2">
