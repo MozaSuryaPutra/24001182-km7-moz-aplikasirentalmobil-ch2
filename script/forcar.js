@@ -18,7 +18,7 @@ async function carDate(cars) {
   const endHour = 23;
 
   cars.forEach((car) => {
-    car.availableAt = randomDate(start, end, startHour, endHour).toISOString();
+    car.availableAt = randomDate(start, end).toISOString();
   });
 
   console.log(cars);
@@ -32,7 +32,7 @@ async function updateData(cars, driver, date, passenger) {
   const filteredData = cars.filter((car) => {
     return (
       car.available === driverValue &&
-      car.availableAt < date &&
+      car.availableAt.substring(0, 10) <= date.substring(0, 10) &&
       car.capacity >= passenger
     );
   });
@@ -64,6 +64,7 @@ const handleCarSubmit = async (event) => {
   }
 
   const dateInput = new Date(dateInputValue).toISOString();
+  console.log(dateInput);
 
   const RealData = await updateData(
     allCarsData,
