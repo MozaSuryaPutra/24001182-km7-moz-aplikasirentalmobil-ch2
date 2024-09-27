@@ -67,88 +67,37 @@ document.getElementById("submit").addEventListener("click", async (event) => {
   let filteredCarsHTML = "";
   RealData.forEach((car) => {
     const carcontent = `
-        <div class="col-md-4 h-100 pb-2 pt-2">
-          <div class="card h-100 w-100" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">${car.model}</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-               RP ${car.rentPerDay} / hari
-              </h6>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              </p>
-              <p class="card-text">
-                Kapasitas: ${car.capacity} orang
-              </p>
-              <p class="card-text">
-                Manual/Automatic: ${car.transmission}
-              </p>
-              <p class="card-text">
-                Tahun : ${car.year}
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-4 h-100 pb-2 pt-2">
+  <div class="card h-100 w-100">
+    <div class="card-body">
+     <img src="${car.image}" alt="" class="img-fluid d-block w-100" style="height: 400px; object-fit: contain;">
+
+      <h5 class="card-title">${car.model}</h5>
+      <h5 class="card-subtitle mb-2">
+        RP ${car.rentPerDay} / hari
+      </h5>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p class="card-text">
+        <i class="bi bi-people"></i> ${car.capacity} orang
+      </p>
+      <p class="card-text">
+        <i class="bi bi-gear"></i> ${car.transmission}
+      </p>
+      <p class="card-text">
+        <i class="bi bi-calendar4"></i> Tahun ${car.year}
+      </p>
+      <p class="card-text">
+        <button class="btn-custom w-100">Pilih Mobil</button>
+      </p>
+    </div>
+  </div>
+</div>
+
       `;
     filteredCarsHTML += carcontent;
   });
 
   carContentElement.innerHTML = filteredCarsHTML;
 });
-// async function handleSubmit(event) {
-//   event.preventDefault();
-//   const dateInputValue = document.getElementById("dateInput").value;
-//   const driverInputValue = document.getElementById("driverInput").value;
-//   const passengerInputValue = document.getElementById("passengerInput").value;
-
-//   if (dateInputValue === "" || driverInputValue === "") {
-//     console.log("Input tanggal kosong. Tidak ada tindakan yang diambil.");
-//     return;
-//   } else if (dateInputValue === "" && driverInputValue === "") {
-//     console.log("Input tanggal kosong. Tidak ada tindakan yang diambil.");
-//     return;
-//   }
-
-//   const dateInput = new Date(dateInputValue).toISOString;
-
-//   const RealData = await updateData(
-//     driverInputValue,
-//     dateInput,
-//     passengerInputValue
-//   );
-
-//   console.log(RealData);
-
-//   let filteredCarsHTML = "";
-//   RealData.forEach((car) => {
-//     const carcontent = `
-//     <div class="col-md-4 h-100 pb-2 pt-2">
-//       <div class="card h-100" style="width: 18rem">
-//         <div class="card-body">
-//           <h5 class="card-title">${car.model}</h5>
-//           <h6 class="card-subtitle mb-2 text-body-secondary">
-//            RP ${car.rentPerDay} / hari
-//           </h6>
-//           <p class="card-text">
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-//           </p>
-//           <p class="card-text">
-//             Kapasitas: ${car.capacity} orang
-//           </p>
-//           <p class="card-text">
-//             Manual/Automatic: ${car.transmission}
-//           </p>
-//           <p class="card-text">
-//             Tahun : ${car.year}
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   `;
-//     filteredCarsHTML += carcontent;
-//   });
-
-//   carContentElement.innerHTML = filteredCarsHTML;
-// }
-
-// document.getElementById("submit").addEventListener("click", handleSubmit);
